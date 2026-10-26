@@ -1,0 +1,22 @@
+[
+ {"id": "1", "category": "Azure basics", "question": "What is a resource group?", "answer": "A resource group is a folder in Azure that holds all the resources of one project or lab. Delete the resource group and everything inside it is deleted, so billing stops."},
+ {"id": "2", "category": "Azure basics", "question": "What is a subscription?", "answer": "A subscription is your Azure wallet. All costs are billed to it. The free trial gives you credit for your first month."},
+ {"id": "3", "category": "Azure basics", "question": "What does the F0 pricing tier mean?", "answer": "F0 is the free tier. It has a monthly free limit that is enough for our labs. Most services allow only one F0 resource per subscription."},
+ {"id": "4", "category": "Azure basics", "question": "Which region should I choose?", "answer": "Choose East US in class. Almost every Azure AI service is available there."},
+ {"id": "5", "category": "Keys and security", "question": "What is the difference between an endpoint and a key?", "answer": "The endpoint is the internet address of your service. The key is its password. Code needs both. Do not open the endpoint in a browser."},
+ {"id": "6", "category": "Keys and security", "question": "My key leaked on GitHub. What should I do?", "answer": "Open the resource in the Azure portal, go to Keys and Endpoint, and click Regenerate. The old key stops working at once."},
+ {"id": "7", "category": "Keys and security", "question": "Where should I keep my key?", "answer": "Keep it in a .env file that is listed in .gitignore, or type it with getpass in Colab. Never put a key in code, screenshots or WhatsApp."},
+ {"id": "8", "category": "Errors", "question": "What does error 401 mean?", "answer": "Error 401 means the key is wrong or belongs to another resource. Copy KEY 1 again from Keys and Endpoint."},
+ {"id": "9", "category": "Errors", "question": "What does error 404 mean?", "answer": "Error 404 means the address is wrong. Check the endpoint or URL, and for Custom Vision check that the model is published with the same name."},
+ {"id": "10", "category": "Errors", "question": "What does error 415 mean?", "answer": "Error 415 means the service did not expect this kind of data. For Custom Vision, use the Prediction URL for an image file, the one that ends with /image."},
+ {"id": "11", "category": "Errors", "question": "Why can I not create a free F0 resource again after deleting it?", "answer": "Deleted AI resources stay in a recycle bin for 48 hours. Open Manage deleted resources, select the old resource and click Purge, then create it again."},
+ {"id": "12", "category": "Errors", "question": "Language Studio says my account does not exist in tenant. What now?", "answer": "This happens with some personal Microsoft accounts. Use the Python way instead: copy the endpoint and key from the portal and run the lab code."},
+ {"id": "13", "category": "Course", "question": "How do I submit my work?", "answer": "Push your work to your public GitHub repository in the folder for that week, then paste the repository link in the Google Classroom question."},
+ {"id": "14", "category": "Course", "question": "When are the pitch project milestones?", "answer": "Idea presentation in Week 3, Working Demo 1 in Week 6, Working Demo 2 in Week 9 and the final presentation in Week 12."},
+ {"id": "15", "category": "Course", "question": "Does Working Demo 2 need to be on Azure?", "answer": "Yes. Working Demo 2 must be deployed on Azure."},
+ {"id": "16", "category": "Course", "question": "What do we learn in Week 8?", "answer": "Azure NLP, knowledge mining and chatbots, Azure Machine Learning, and MLOps and deployment."},
+ {"id": "17", "category": "Services", "question": "What is sentiment analysis?", "answer": "Sentiment analysis tells whether a text is positive, neutral or negative, with a score for each."},
+ {"id": "18", "category": "Services", "question": "What is PII detection?", "answer": "PII detection finds private data such as names, phone numbers and emails and hides them with stars."},
+ {"id": "19", "category": "Services", "question": "What is Azure AI Search?", "answer": "Azure AI Search builds a search index over your documents so you can find answers in seconds. It is the base of knowledge mining."},
+ {"id": "20", "category": "Services", "question": "What is the difference between Custom Vision classification and object detection?", "answer": "Classification gives one label for the whole image. Object detection finds where each object is and draws a box around it."}
+]
